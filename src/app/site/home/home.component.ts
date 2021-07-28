@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FILMS } from '../shared/models/des-film';
 import { Film } from '../shared/models/film';
 
 @Component({
@@ -8,7 +9,7 @@ import { Film } from '../shared/models/film';
 })
 export class HomeComponent implements OnInit {
 
-
+   tabfilms : Film[] = FILMS;
 
   constructor() { }
 
